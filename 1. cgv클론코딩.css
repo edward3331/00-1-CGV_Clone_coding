@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 50px 50px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.main_container{
+  padding: 50px 50px;
+  display: flex;
+  gap: 60px;
+  flex-direction: row;
+  justify-content: center;
+  user-select: none;
+}
+
+.left_container{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px; 
+
+}
+
+.calendar_container{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.calendar{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+.calendar:hover{
+  border: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.finger {
+  margin-top: 7px;
+}
+
+
+.day_R{
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  color: rgb(104, 103, 103);
+}
+
+.day_R:hover{
+  color: black;
+}
+
+.day_L{
+  display: flex;
+  color: rgb(104, 103, 103);
+  align-items: center;
+  flex-direction: column;
+  font-size: 9px;
+}
+
+.L_up{
+  display: flex;
+  white-space: nowrap;
+}
+
+.guide_container{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content:end;      
+  margin-right: 10px; 
+}
+
+.guide{
+  display: flex;
+  font-size: 11px;
+  text-align: right
+}
+
+.guide:hover{
+  cursor: pointer;
+  color: #646262;
+}
+
+.weather_hr{
+  border: none;    
+  border-top: 2px solid black; 
+  width: 100%;     
+  height: 0;          
+  display: black;
+  margin:  10px 0;
+}
+
+.weather{
+  white-space: nowrap;
+  font-size: 12px;
+  color: #ff7e33;
+}
+
+hr{
+  border: none;    
+  border-top: 1px solid black; 
+  width: 100%;     
+  height: 0;          
+  display: black;
+  margin:  10px 0;
+}
+
+.movie{
+  height: 100vh;
+}
+
+.movie_information:hover{
+cursor: pointer;
+color: #646262;
+}
+.movie_information_ALLimg{
+  height: 23px;
+  vertical-align: middle;
+}
+.movie_information_showingimg{
+  height:20px;
+  vertical-align: middle;
+}
+.movie_genre{
+  color: #646262;
+  font-size: 13px;
+}
+.movie_seat{
+  font-size: 12px;
+}
+.movie_seat_l{
+  color: #a19f9f;
+}
+.movie_seat_l_4DX{
+  vertical-align: middle;
+  width: 80px;
+}
+.movie_chair{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid;
+  border-width: 1px;
+  color: #646262;
+  width:75px;
+  height:45px;
+  margin: 5px;
+}
+.movie_chair:hover{
+  color: black;
+  cursor: pointer;
+}
+.movie_chair_time{
+  font-weight: 1000;
+}
+.mopvie_chair_end{
+  font-size: 11px;
+}
+
+.right_container{
+  width: 15%;
+  display: flex;
+  height: 100vh;
+  flex-direction: column; 
+}
+
+.R_img{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.R_botbox{
+  position: absolute;
+  display: flex;
+  position: fixed;
+  top: 83%;
+  gap: 10px;
+  right: 5px;
+}
+
+@media (min-width: 1005px) {
+  .R_botbox {
+    right: calc(50% - 510px); 
+    /* 화면 중앙 기준에서 max-width만큼 오른쪽으로 고정 */
+  }
+}
+
+.Reservation{
+  position: sticky;
+  right: 60px;
+  width: 136px;
+  background: linear-gradient(90deg, #f44369, #ff7e33);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 36px;  
+  padding: 12px  14px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+}
+
+.arrow{
+  position: relative;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: solid;
+  border-width: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
