@@ -1,18 +1,7 @@
-import React from "react";
+  const arrows = document.querySelectorAll('.arrow');
 
-function MyComponent() {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
+  arrows.forEach(arrow => {
+    arrow.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-  };
-
-  return (
-    <div className="arrow" onClick={scrollToTop}>
-      ↑
-    </div>
-  );
-}
-
-export default MyComponent;
+  });
